@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_data_gen_rap_j6094 IMPLEMENTATION.
+CLASS ZCL_DATA_GEN_RAP_J6094 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

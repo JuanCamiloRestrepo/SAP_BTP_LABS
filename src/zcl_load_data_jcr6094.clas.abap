@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_load_data_jcr6094 IMPLEMENTATION.
+CLASS ZCL_LOAD_DATA_JCR6094 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
