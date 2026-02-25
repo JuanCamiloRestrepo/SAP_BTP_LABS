@@ -18,7 +18,7 @@ define view entity ZBOOKING_I_J6094
       BookingStatus,
 
       @Semantics.systemDateTime.localInstanceLastChangedAt: true
-      LocalLastChagedAt,
+      LocalLastChangedAt,
 
       /* Associations */
       _BookingStatus,

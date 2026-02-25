@@ -33,7 +33,7 @@ define view entity ZBOOKING_R_J6094
 
       // Local ETag Field
       @Semantics.systemDateTime.localInstanceLastChangedAt: true
-      local_last_chaged_at as LocalLastChagedAt,
+      local_last_changed_at as LocalLastChangedAt,
 
       _Travel,
       _Customer,
