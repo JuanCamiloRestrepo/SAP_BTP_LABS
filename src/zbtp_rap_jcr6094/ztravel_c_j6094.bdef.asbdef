@@ -1,0 +1,47 @@
+projection;
+strict ( 2 );
+use draft;
+
+define behavior for ZTRAVEL_C_J6094 alias Travel
+{
+  use create;
+  use update;
+  use delete;
+
+  use action acceptTravel;
+  use action rejectTravel;
+  use action deductDiscount;
+  use action validateCustomerID;
+  use action validateAgencyID;
+  use action validateDateRange;
+
+  use action edit;
+  use action activate;
+  use action discard;
+  use action resume;
+  use action prepare;
+
+  use association _Booking { create; with draft; }
+}
+
+define behavior for ZBOOKING_C_J6094 alias Booking
+{
+  use update;
+  use delete;
+
+  use action validateFlightCost;
+
+  use association _BookingSupplement { create; with draft; }
+  use association _Travel { with draft; }
+}
+
+define behavior for ZBKSPPL_C_J6094 alias BookingSupplement
+{
+  use update;
+  use delete;
+
+  use action validateSupplementPrice;
+
+  use association _Travel { with draft; }
+  use association _Booking { with draft; }
+}
